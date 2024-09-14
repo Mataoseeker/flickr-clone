@@ -10,13 +10,11 @@
   }
 header{
     display: flex;
-    /* background-color: rgba(8, 0, 0, 0.4); */
-    /* padding: 10px; */
+    padding: 6px;
   position: relative;
   z-index: 10;
   width: 100%;
   background-color: rgba(0, 0, 0, 0.6); /* Semi-transparent to reveal background images */
-  padding: 10px;
   color: white;
 }
 
@@ -103,6 +101,15 @@ input{
   
   .slideshow img:nth-child(5) {
     animation-delay: 20s;
+  }
+  .slideshow img:nth-child(6) {
+    animation-delay: 25s;
+  }
+  .slideshow img:nth-child(7) {
+    animation-delay: 30s;
+  }
+  .slideshow img:nth-child(8) {
+    animation-delay: 35s;
   }
   
   @keyframes fadeEffect {
