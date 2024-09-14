@@ -1,0 +1,185 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body, html {
+    height: 100%;
+    font-family: Arial, sans-serif;
+  }
+header{
+    display: flex;
+    /* background-color: rgba(8, 0, 0, 0.4); */
+    /* padding: 10px; */
+  position: relative;
+  z-index: 10;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.6); /* Semi-transparent to reveal background images */
+  padding: 10px;
+  color: white;
+}
+
+.flickr{
+    margin: 10px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: white;
+}
+.img1{
+    margin-left: 10px;
+}
+ .link{
+    margin-top: 15px;
+ }
+ a{
+    color: white;
+    text-decoration: none;
+    margin-left: 10px;
+    
+}
+.signup{
+   background-color: white;
+   color: black;
+   padding: 12px 15px;
+   border-radius: 3px;
+   font-family: Arial, Helvetica, sans-serif;
+
+}
+
+input{
+    width: 55%;
+    height: 30px;
+    margin-top: 10px;
+    margin-left: 120px;
+    margin-right: 200px;
+    border-radius: 5px;
+    border-style: none;
+    background-color: rgb(235, 231, 231);
+   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+   font-size: medium;
+}
+.slideshow-container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    z-index: 1; /* Ensures the slideshow is behind the header */
+  }
+  
+  .slideshow {
+    position: relative;
+    width: 100%;
+    height: 100%;
+  }
+  
+  .slideshow img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: 0;
+    animation: fadeEffect 25s infinite;
+  }
+  
+  .slideshow img:nth-child(1) {
+    animation-delay: 0s;
+  }
+  
+  .slideshow img:nth-child(2) {
+    animation-delay: 5s;
+  }
+  
+  .slideshow img:nth-child(3) {
+    animation-delay: 10s;
+  }
+  
+  .slideshow img:nth-child(4) {
+    animation-delay: 15s;
+  }
+  
+  .slideshow img:nth-child(5) {
+    animation-delay: 20s;
+  }
+  
+  @keyframes fadeEffect {
+    0% {
+      opacity: 0;
+    }
+    20% {
+      opacity: 1;
+    }
+    40% {
+      opacity: 1;
+    }
+    60% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 0;
+    }
+  }
+  
+  /* Text Content Styling */
+.content {
+    position: relative;
+    z-index: 5; /* Ensures text is above the slideshow */
+    color: white;
+    text-align: center;
+    padding: 50px;
+    max-width: 800px;
+    margin: 50px auto;
+    border-radius: 10px;
+  }
+  
+  .content h1 {
+    font-size: 56px;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-top: 70px;
+  }
+  
+  .content p {
+    font-size: 28px;
+    line-height: 1.6;
+    margin-top: 20px;
+    margin-bottom: 50px;
+  }
+  .free{
+    background-color: white;
+    color: black;
+    padding: 20px 18px;
+    border-radius: 3px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 22px;
+}
+footer{
+    position: fixed;
+    z-index: 5;
+   bottom: 0;
+   right: 0;
+   left: 0;
+}
+.link2 {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #070707;
+    
+  }
+  
+  li {
+    float: left;
+  }
+  
+  li a {
+    display: block;
+    color: rgb(180, 178, 178);
+    text-align: center;
+    padding: 16px 35px;
+    text-decoration: none;
+  }
+  
